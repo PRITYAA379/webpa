@@ -1,0 +1,222 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to bottom right, #FFB6C1, #B6A3D1); /* Light red to purplish sky */
+    color: #ffffff;
+}
+
+/* Header Styling */
+header {
+    background: #6A1B9A; /* New deep purple to make it modern */
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FFEB3B; /* Light golden-yellow for a striking contrast */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFEB3B; /* Hover effect with golden-yellow */
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    position: relative;
+    color: #ffffff;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    color: #ddd;
+}
+
+.hero .cta {
+    display: inline-block;
+    background: #FF5722; /* Eye-catching bright orange */
+    color: #ffffff;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.hero .cta:hover {
+    background: #FF7043; /* Slightly lighter orange on hover */
+}
+
+/* Services Section */
+.services {
+    padding: 50px 10%;
+    text-align: center;
+    background: #ffffff;
+    color: #000000;
+}
+
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #6A1B9A; /* Deep purple for section header */
+}
+
+.services .service-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.services .service-item {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services .service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.services .service-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #FF5722; /* Orange color for headers */
+}
+
+.services .service-item p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Footer Styling */
+footer {
+    background: #6A1B9A; /* Match header color */
+    padding: 20px 10%;
+    text-align: center;
+    color: #ffffff;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #FFEB3B; /* Light golden-yellow for footer links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* New Arrivals Section */
+.new-arrivals {
+    background: linear-gradient(to right, #FF7043, #FF5722); /* Vibrant orange gradient */
+    color: #ffffff;
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.new-arrivals h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.new-arrivals p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.new-arrivals .cta {
+    display: inline-block;
+    background: #FFD700; /* Gold color for call to action */
+    color: #0D47A1;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.new-arrivals .cta:hover {
+    background: #FFEB3B; /* Lighter gold on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header .logo {
+        font-size: 1.6rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .services .service-list {
+        flex-direction: column;
+    }
+
+    .services .service-item {
+        margin-bottom: 20px;
+    }
+}
