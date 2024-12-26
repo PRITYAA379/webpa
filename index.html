@@ -7,14 +7,160 @@
     <meta name="keywords" content="DigiVisions, digital solutions, marketing, web development">
     <meta name="author" content="DigiVisions">
     <title>DigiVisions | Home</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Updated CSS link -->
+    <style>
+        /* Reset and Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(to bottom right, #282828, #121212);
+            color: #ffffff;
+        }
+
+        header {
+            background: #0D47A1;
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #FFD700;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #FFD700;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: url('hero-bg.jpg') no-repeat center center/cover;
+            position: relative;
+            color: #ffffff;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #dddddd;
+        }
+
+        .hero .cta {
+            display: inline-block;
+            background: #FFD700;
+            color: #0D47A1;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .hero .cta:hover {
+            background: #FFC107;
+        }
+
+        .services {
+            padding: 50px 10%;
+            text-align: center;
+            background: #ffffff;
+            color: #000000;
+        }
+
+        .services h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .services .service-list {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .services .service-item {
+            flex: 1;
+            margin: 0 10px;
+            padding: 20px;
+            background: #f4f4f4;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .services .service-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .services .service-item p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        footer {
+            background: #0D47A1;
+            padding: 20px 10%;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        footer p {
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #FFD700;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="logo">DigiVisions</div>
         <nav>
             <ul>
-                <li><a href="#about">About Us</a></li>
+                <li><a href="aboutus.html">About Us</a></li> <!-- Link to About Us page -->
                 <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -22,14 +168,12 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
         <h1>Welcome to DigiVisions</h1>
         <p>Your gateway to innovative digital solutions. Let’s build your future together.</p>
         <a href="#services" class="cta">Discover Our Services</a>
     </section>
 
-    <!-- Services Section -->
     <section class="services" id="services">
         <h2>Our Services</h2>
         <div class="service-list">
@@ -48,16 +192,8 @@
         </div>
     </section>
 
-    <!-- New Arrivals Section -->
-    <section class="new-arrivals">
-        <h2>New Arrivals</h2>
-        <p>Check out our latest services designed to boost your business even further!</p>
-        <a href="#contact" class="cta">Get Started Today</a>
-    </section>
-
-    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 DigiVisions. All Rights Reserved. <a href="#contact">Contact Us</a></p>
+        <p>&copy; 2024 DigiVisions. All Rights Reserved. <a href="aboutus.html">About Us</a> | <a href="#contact">Contact Us</a></p>
     </footer>
 </body>
 </html>
